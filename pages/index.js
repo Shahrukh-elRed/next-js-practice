@@ -12,9 +12,53 @@ export default function Home() {
     <div className={styles.main}>
       <h1>First Page</h1>
       <h2>
-        <Link href="/blog">About</Link>
+        <Link className="link" href="/blog">
+          Blog page
+        </Link>
       </h2>
-      <button onClick={handleClick}>Click to Place Order</button>
+      <h2>
+        <Link className="link" href="/about">
+          About
+        </Link>
+      </h2>
+      <h2>
+        <Link className="link" href="/users">
+          Next JS Pre-rendering
+        </Link>
+      </h2>
+      <h2>
+        <Link className="link" href="/posts">
+          Go to Posts (Static Generation)
+        </Link>
+      </h2>
+      <h2>
+        <Link className="link" href="/news">
+          Go to Posts (Server Side Rendering)
+        </Link>
+      </h2>
+      <h2>
+        <Link className="link" href="/dashboard">
+          Go to Dashboard (Client-side Data Fetching)
+        </Link>
+      </h2>
+      <h2>
+        <Link className="link" href="/dashboard-swr">
+          Go to Dashboard (Client-side Data Fetching with SWR library)
+        </Link>
+      </h2>
+      <h2>
+        <Link className="link" href="/events">
+          Events (Pre rendering + Client side Data Fetching)
+        </Link>
+      </h2>
+      <h2>
+        <Link className="link" href="/comments">
+          Comments (Fetched from locally built comments API)
+        </Link>
+      </h2>
+      <button className="btn btn-primary" onClick={handleClick}>
+        Click to Place Order
+      </button>
     </div>
   );
 }
