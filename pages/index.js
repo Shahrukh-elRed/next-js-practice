@@ -56,6 +56,17 @@ export default function Home() {
           Comments (Fetched from locally built comments API)
         </Link>
       </h2>
+      <h2>
+        <Link className="link" href="/images">
+          Next JS Image Component
+        </Link>
+      </h2>
+      <h2>
+        <Link className="link" href="/articles">
+          Next JS Articles (Free for unauthenticated, personalised for
+          Authenticated)
+        </Link>
+      </h2>
       <button className="btn btn-primary" onClick={handleClick}>
         Click to Place Order
       </button>

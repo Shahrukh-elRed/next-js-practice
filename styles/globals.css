@@ -7,12 +7,33 @@
   color: black;
 }
 
+.navlink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navlink:hover {
+  color: #f1f1f1;
+}
+
 .layout-header {
   background-color: #264653;
+  padding: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-text {
   color: #f4a261;
   font-size: 30px;
-  text-align: center;
-  padding: 30px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .layout-footer {
@@ -25,4 +46,10 @@
 
 .content {
   min-height: calc(100vh - 190px);
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
 }

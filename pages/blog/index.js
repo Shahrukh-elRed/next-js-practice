@@ -37,6 +37,7 @@ const BlogPage = ({ productId = 20, title, description }) => {
             Product 4
           </Link>
         </h2>
+        <h2>Public Key : {process.env.NEXT_PUBLIC_SOME_KEY}</h2>
       </div>
     </>
   );
@@ -54,6 +55,13 @@ BlogPage.getLayout = function PageLayout(page) {
 };
 
 export async function getServerSideProps() {
+  const user = process.env.DB_USER;
+  const password = process.env.DB_PASSWORD;
+
+  console.log(
+    `Connecting to DB with username ${user} and password ${password}`
+  );
+
   return {
     props: {
       title: "Blogs",
